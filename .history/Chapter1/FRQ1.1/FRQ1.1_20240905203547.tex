@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+(i) $(P \land \neg R) \lor Q$\\
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    $P$ & $Q$ & $R$ & $\neg R$ & $ P \land \neg R$ & $(P \land \neg R) \lor Q$ \\
+    \hline
+    T   & T   & T   & F        & F                 & T                         \\
+    T   & T   & F   & T        & T                 & T                         \\
+    T   & F   & T   & F        & F                 & F                         \\
+    T   & F   & F   & T        & T                 & T                         \\
+    F   & T   & T   & F        & F                 & T                         \\
+    F   & T   & F   & T        & F                 & T                         \\
+    F   & F   & T   & F        & F                 & F                         \\
+    F   & F   & F   & T        & F                 & F                         \\
+    \hline
+\end{tabular}
+
+(ii) $\neg Q \Rightarrow (\neg P \Rightarrow \neg R)$\\
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    $P$ & $Q$ & $R$ & $\neg Q \Rightarrow (\neg P \Rightarrow \neg R)$ \\
+    \hline
+    T   & T   & T   & $PLACEHOLDER$                                    \\
+    T   & T   & F   & $PLACEHOLDER$                                    \\
+    T   & F   & T   & $PLACEHOLDER$                                    \\
+    T   & F   & F   & $PLACEHOLDER$                                    \\
+    F   & T   & T   & $PLACEHOLDER$                                    \\
+    F   & T   & F   & $PLACEHOLDER$                                    \\
+    F   & F   & T   & $PLACEHOLDER$                                    \\
+    F   & F   & F   & $PLACEHOLDER$                                    \\
+    \hline
+\end{tabular}
+
+(iii) $(P \Rightarrow R) \Rightarrow Q$\\
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    $P$ & $Q$ & $R$ & $(P \Rightarrow R) \Rightarrow Q$ \\
+    \hline
+    T   & T   & T   & $PLACEHOLDER$                     \\
+    T   & T   & F   & $PLACEHOLDER$                     \\
+    T   & F   & T   & $PLACEHOLDER$                     \\
+    T   & F   & F   & $PLACEHOLDER$                     \\
+    F   & T   & T   & $PLACEHOLDER$                     \\
+    F   & T   & F   & $PLACEHOLDER$                     \\
+    F   & F   & T   & $PLACEHOLDER$                     \\
+    F   & F   & F   & $PLACEHOLDER$                     \\
+    \hline
+\end{tabular}
+\end{document}
