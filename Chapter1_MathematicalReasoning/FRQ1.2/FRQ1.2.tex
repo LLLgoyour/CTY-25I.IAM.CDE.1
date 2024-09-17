@@ -6,20 +6,25 @@
 Consider the statement $S$: ``If two integers are both even, then their product is even''.
 
 (a) Write $S$ in the form ``for all\ldots, if\ldots, then\ldots'', using only mathematical symbols and variables.
-
-$S$: $\forall a, b \in \mathbb{Z}$, if $a$ and $b$ are both even, b then $ab$ is even.
+\[
+    S: \forall a, b \in \mathbb{Z}, a \equiv 0 \pmod{2} \land b \equiv 0 \pmod{2} \implies ab \equiv 0 \pmod{2}
+\]
 
 (b) Write the negation of $S$ using only mathematical symbols and variables.
-
-Negation of $S$: $\exists a, b \in \mathbb{Z}$ such that $a$ and $b$ are both even, but $ab$ is not even.
+\[
+    \neg S: \exists a, b \in \mathbb{Z}, a \equiv 0 \pmod{2} \land b \equiv 0 \pmod{2} \land ab \not\equiv
+    0 \pmod{2}
+\]
 
 (c) Write the converse of $S$ using only mathematical symbols and variables.
-
-Converse of $S$: $\forall a, b \in \mathbb{Z}$, if $ab$ is even, then $a$ and $b$ are both even.
+\[
+    \text{Converse of } S: \forall a, b \in \mathbb{Z}, ab \equiv 0 \pmod{2} \implies a \equiv 0 \pmod{2} \land b \equiv 0 \pmod{2}
+\]
 
 (d) Write the contrapositive of $S$ using only mathematical symbols and variables.
-
-Contrapositive of $S$: $\forall a, b \in \mathbb{Z}$, if $ab$ is not even, then $a$ or $b$ is not even.
+\[
+    \text{Contrapositive of } S: \forall a, b \in \mathbb{Z}, ab \not\equiv 0 \pmod{2} \implies a \not\equiv 0 \pmod{2} \lor b \not\equiv 0 \pmod{2}
+\]
 
 (e) Either prove or disprove $S$.
 
@@ -30,3 +35,4 @@ Proof: Let $a$ and $b$ be even integers. Then, we can write $a = 2k$ and $b = 2m
 This proof is now complete.
 
 \end{document}
+
