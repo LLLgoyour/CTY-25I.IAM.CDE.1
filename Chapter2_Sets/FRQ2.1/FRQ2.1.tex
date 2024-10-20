@@ -3,4 +3,21 @@
 \begin{document}
 Prove that $(A - B) \subseteq B \iff (A - B) = \emptyset$.
 
+First we consider the forward direction:
+
+By definition 2.1.4, $(A-B)=\{x\in A \mid x\not\in B\}$, which means $(A-B)$ consists of elements in $A$ but not in $B$.
+
+Since $(A-B) \subseteq B$, every element $x \in (A-B)$ must also belong to $B$. 
+This leads to a contradiction.
+
+Thus, there can't be any element in $(A-B)$, which implies that $(A-B) = \emptyset$.
+
+Then we consider the reverse direction:
+
+Since $(A-B) = \emptyset$, there can't be any element in $(A-B)$. 
+By definition, an empty set is a subset of any set.
+
+Therefore, $(A-B) \subseteq B$.
+
+We conclude that: \[(A - B) \subseteq B \iff (A - B) = \emptyset\]
 \end{document}
