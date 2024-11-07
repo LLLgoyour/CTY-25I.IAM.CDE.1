@@ -3,4 +3,12 @@
 \begin{document}
 Let $A_n=[\frac{1}{n},n]$ for $n\in\mathbb{Z}^+$. We are asked to compute $\bigcup_{n=1}^{\infty}A_n-\bigcap_{n=1}^{\infty}A_n$.
 
+First, let's find $\bigcup_{n=1}^{\infty}A_n$. As $n$ increases, the left endpoint $\frac{1}{n}$ approaches $0$,
+and the right endpoint $n$ increases without bound. This means that the union of all $A_n$ is the interval $[0,\infty)$.
+
+
+Next, $\bigcap_{n=1}^{\infty}A_n$ represents all elements that belong to every interval $A_n$.
+Since all $A_n$ are disjoint, their intersection is empty. Therefore, $\bigcap_{n=1}^{\infty}A_n=\emptyset$.
+
+Thus, $\bigcup_{n=1}^{\infty}A_n-\bigcap_{n=1}^{\infty}A_n=[0,\infty)-\emptyset=[0,\infty)$.
 \end{document}
