@@ -96,13 +96,14 @@ cobertura.xml
 
 # End of https://www.gitignore.io/api/macos,linux,windows,vapor
 
-node_modules/
-_.swp
+node*modules/
+*.swp
 yarn-error.log
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
-.pnp._
+.pnp.\_
 .idea
 
 .history/
+/.history
