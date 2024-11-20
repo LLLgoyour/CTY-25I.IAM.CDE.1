@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath, amsfonts, amsthm}
+\begin{document}
+
+Directions: Let $f:A\to B$ be a bijection and $A_1$ be a subset of $A$.
+
+(a) Prove that $f(A - A_1) = B - f(A_1)$.
+\begin{proof}[Proof of (a)]
+    By definition, $f(A - A_1) = \{f(a)  |a\in A - A_1\}$. Since $A-A_1 =\{a\in A | a\notin A_1\}$.
+    Injectivity ensures that $f(a)$ is unique for each $a\in A-A_1$, so no values in $f(A - A_1)$ overlap with those in $f(A_1)$.
+    Surjectivity ensures that $f(A)=B$, meaning every $b\in B$ corresponds to some $a\in A$.
+    Since $A = (A_1\cup(A-A_1))$ and $A_1\cap(A-A_1) = \emptyset$, $f(A_1)$ and $f(A-A_1)$ are disjoint, and their union equals $f(A) = B$.
+    Thus, $B-f(A_1) = f(A) - f(A_1) = f(A-A_1)\Rightarrow f(A-A_1)=B-f(A_1)$.
+\end{proof}
+(b) Could you have proved the same result under the assumption that $f$ is surjective? Explain.
+
+No, the result cannot be proved under the assumption that $f$ is only surjective. 
+Surjectivity guranatees that $f(A) = B$, so every $b\in B$ has at least one $a\in A$ such that $f(a) = b$.
+However, without injectivity, $f$ may map multiple elements of $A$ to the same element of $B$.
+This would make $f(A-A_1)$ ambiguous because removing $A_1$ from $A$ may not guarantee unique elements in B.
+Therefore, the equality $f(A-A_1) = B - f(A_1)$ has to also rely on $f$ being injective.
+
+(c) Could you have proved the same result under the assumption that $f$ is injective? Explain.
+
+No, the result cannot be proved under the assumption that $f$ is only injective. 
+Injectivity ensures that $f$ maps distinct elements of $A$ to distinct elements of $B$, so $f(A-A_1)$ and $f(A_1)$ are disjoint.
+Without surjectivity, $f(A)\subset B$, meaning there may exist elements in $B$ that are not mapped by $f$.
+In this case, the complement $B-f(A_1)$ may include elements of $B$ that do not correspond to any element of $A$.
+Therefore, the equality $f(A-A_1) = B - f(A_1)$ has to also rely on $f$ being surjective.
+\end{document}

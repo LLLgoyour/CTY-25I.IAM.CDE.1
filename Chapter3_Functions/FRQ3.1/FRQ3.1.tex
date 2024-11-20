@@ -6,15 +6,24 @@ Directions: Let $f:A\to B$ be a function, $A_1$ and $A_2$ be subsets of $A$, and
 \begin{enumerate}
     \item Prove that $f^{-1}(B_1\cap B_2)=f^{-1}(B_1)\cap f^{-1}(B_2)$
     \begin{proof}
-        Since $f$ is a function, it is injective (one-to-one) and surjective (onto).
+        Let $x\in f^{-1}(B_1\cap B_2)$. 
+        By definition 3.1.7, $x\in f^{-1}(B_1\cap B_2)\Rightarrow f(x)\in(B_1\cap B_2)\Rightarrow f(x)\in B_1$ and $f(x)\in B_2$.\\
+        Thus, again by definition 3.1.7, $x\in f^{-1}(B_1)$ and $x\in f^{-1}(B_2)$.\\
     \end{proof}
     \item Prove that $f(A_1\cap A_2)\subseteq f(A_1)\cap f(A_2)$ but $f(A_1)\cap f(A_2)\subseteq f(A_1\cap A_2)$ doesn't necessarily hold.
     \begin{proof}
-        Let $f:A\to B$ be a function such that $f(A_1)=B_1$ and $f(A_2)=B_2$.
+        Let $y\in f(A_1\cap A_2)$. By definition 3.1.7, $y\in f(A_1\cap A_2)\Rightarrow y=f(x)$ for some $x\in A_1\cap A_2$.\\
+        Thus, $f(x)\in f(A_1)$ and $f(x)\in f(A_2)$.\\
+        Therefore, $y\in f(A_1)\cap f(A_2)$, and so $f(A_1\cap A_2)\subseteq f(A_1)\cap f(A_2)$.\\
+        However, let $f:\{1,2,3\}\to\{a,b\}$ be defined by $f(1)=a$, $f(2)=a$, and $f(3)=b$.\\
+        and let $A_1=\{1,3\}$ and $A_2=\{2,3\}$.\\
+        Then $f(A_1)=\{a,b\}$, $f(A_2)=\{a,b\}$, and $A_1\cap A_2=\{3\}$.\\
+        Then $f(A_1)\cap f(A_2)=\{a,b\}, f(A_1\cap A_2)=\{b\}$, and so $f(A_1)\cap f(A_2)\subseteq f(A_1\cap A_2)$ doesn't necessarily hold.
     \end{proof}
-    \item Explain what about the definition of functions enables the statement in (a) to be true, but precludes $f(A_1)\cap f(A_2)\subseteq f(A_1\cap A_2)$. (Hint: Think about what all counterexamples to this statement have in common.)
-    \begin{proof}
-        Since $f$ is a function, it is injective (one-to-one) and surjective (onto).
-    \end{proof}
+    \item Explain what about the definition of functions enables the statement in (a) to be true, but precludes $f(A_1)\cap f(A_2)\subseteq f(A_1\cap A_2)$. (Hint: Think about what all counterexamples to this statement have in common.)\\
+        The definition of functions enables the statement in (a) to be true 
+        because for any $x\in f^{-1}(B_1\cap B_2)$, $f(x)\in B_1$ and $f(x)\in B_2$. A function maps each input to a unique output.\\
+        However, the definition of functions precludes $f(A_1)\cap f(A_2)\subseteq f(A_1\cap A_2)$ 
+        because for any $x\in A_1\cap A_2$, $f(x)$ may be in $f(A_1)$ and $f(A_2)$, but not in $f(A_1\cap A_2)$. A function is not necessarily injective.
 \end{enumerate}
 \end{document}
